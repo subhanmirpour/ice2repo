@@ -1,18 +1,14 @@
-let add = (a: number, b: number) => {
+const add = (a: number, b: number) => {
     return a + b;
 };
-let subtract = (a: number, b: number) => {
+const subtract = (a: number, b: number) => {
     return a - b;
 };
-let multiply = (a: number, b: number) => {
+const multiply = (a: number, b: number) => {
     return a * b;
 };
-let divide = (a: number, b: number) => {
+const divide = (a: number, b: number) => {
     return a / b;
 };
-module.exports = {
-    add: add,
-    subtract: subtract,
-    multiply: multiply,
-    divide: divide
-};
+
+export {add, subtract, multiply, divide};

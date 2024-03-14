@@ -1,6 +1,7 @@
 import promptSync from 'prompt-sync';
 const prompt = promptSync();
-var calculator = require("./calculator");
+//var calculator = require("./calculator");
+import * as calculator from "./calculator";
 var readInput = () => {
     console.log("Welcome to the calculator. Choose one of the following options");
     console.log("1. add");
@@ -11,10 +12,10 @@ var readInput = () => {
     var option = prompt(">> ");
     if (option !== "5") {
         console.log("Enter the first number");
-        let a = Number(prompt(">> "));
+        let a: number = Number(prompt(">> "));
         console.log("Enter the second number");
-        let b = Number(prompt(">> "));
-        let c;
+        let b: number = Number(prompt(">> "));
+        let c: number;
         switch (option) {
             case "1":
                 {
